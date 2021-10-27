@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='navegacion_estilo.css') }}>
+  </head>
+  <body>
+
+    <h1> 
+    <img src="{{url_for('static', filename='mapageneral1.png')}}" width=70 height=70 /> 
+    Sistema de información académica
+    <div id="box">
+    <nav class="logout">
+        <ul class ="pestanha">
+        <li><a href="#">user</a><ul class="subpestanha">
+            <li><a href="{{ url_for('login') }}">Cerrar sesión</a></li>   
+    </div> 
+
+    </h1>
+
+    <p>
+    <div id="contenido">
+    <!--  Acá viene el contenido especificado en los mockup, lado izquierdo de la pantalla, conservando la barra para seguir navegando -->
+        <table class="default">
+
+            <tr>
+                <th scope="col">
+                
+                    {% block content %}
+                    {% endblock %}
+                            
+                </th>    
+            </tr>
+
+        </table>
+    
+    </div>
+    <div class="barra">
+        <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="{{ url_for('vuelta') }}">Inicio</a></li>
+                    <li><a href="#">Información personal</a><ul class="submenu">
+                        <li><a href="#">Datos personales</a></li>
+                            
+                    </ul></li>
+                    <li><a href="#">Cursos y asignaturas</a><ul class="submenu">
+                        <li><a href="#">Buscar cursos</a></li>
+                        <li><a href="#">Buscar asignaturas</a></li>
+                        <li><a href="#">Mis cursos </a></li>
+                        <li><a href="#">Mis asignaturas </a></li>
+                        <li><a href="#">Crear/Eliminar curso</a></li>
+                        <li><a href="#">Crear/Eliminar asignatura</a></li>
+                    </ul></li>
+                    <li><a href="#">Usuarios</a><ul class="submenu">
+                        <li><a href="#">Información general</a></li>
+                        <li><a href="#">Ver usuarios</a></li>
+                        <li><a href="#">Edición de usuarios</a></li>
+                        <li><a href="#">Registro de usuarios</a></li>
+                    </ul></li>
+                </ul>
+        </nav>
+    </div>
+
+    </p>
+
+  </body>
+</html>

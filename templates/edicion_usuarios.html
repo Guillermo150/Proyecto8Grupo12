@@ -1,0 +1,27 @@
+{% extends "base4.html" %}
+{% block title %}
+Edición
+{% endblock %}
+{% block content %}
+
+
+
+<h2>Lista de usuarios</h2>
+
+                        <div class="card-body">
+                            <ul class="list-group">
+                                {% for x in task%}
+                                <li class="list-group-item">
+                                    <span class="{%if x.nickname%}nickname{%endif%}">{{x.nombres_usuario}}</span>
+                                    <a href="/nickname/{{x.id}}" class="btn btn-success btn-sm">Edit</a>
+                                    <a href="/delete/{{x.id}}">Delete</a>
+                                </li>
+                                {% endfor%}
+                            </ul>
+                        
+                        </div>
+
+
+
+
+{% endblock %}

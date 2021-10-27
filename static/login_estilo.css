@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://www.elegircarrera.net/blog/wp-content/uploads/2017/10/campus-universitario-2000x1200.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+form {
+    width: 700px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 160px;
+    background-color: rgb(103, 219, 223);
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+form input {
+    padding: 10px 30px;
+    border: 1px solid #f6f6f6;
+    border-radius: 12px;
+    margin: 8px 10px;
+    margin-left: 220px;
+}
+
+form button {
+    text-align: center;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    margin-left: 220px;
+}
+
+form img {
+    width: "600";
+    height: "100";
+    border-radius: 30px;
+}
+
+p#textologin {
+    position: fixed;
+}
+
+h1 img {
+    width: 70px;
+    height: 70px;
+}

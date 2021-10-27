@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://www.elegircarrera.net/blog/wp-content/uploads/2017/10/campus-universitario-2000x1200.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p {
+    display: inline;
+}
+
+div#box {
+    float: right;
+    font-size: 15px;
+    width: 200px;
+}
+
+div#contenido {
+    float: right;
+    background-color: aliceblue;
+    width: 1120px;
+    height: 580px;
+}
+
+h1 {
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 65px;
+    display: inline-flexbox;
+}
+
+.logout {
+    list-style: none;
+    width: 90px;
+    position: fixed;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    width: 120px;
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    width: 200px;
+    height: 55px;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
+}
+
+.submenu li a {
+    color: rgb(0, 0, 0);
+    background-color: rgba(233, 118, 52, 0.877);
+}
+
+li a:hover {
+    color: rgb(255, 0, 0);
+    background-color: #fff;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+}
+
+nav li:hover ul {
+    display: block;
+    position: sticky;
+    object-position: right;
+}
+
+table {
+    width: 50%;
+    height: 300px;
+}

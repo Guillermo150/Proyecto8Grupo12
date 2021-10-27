@@ -1,0 +1,22 @@
+{% extends "base4.html" %}
+{% block title %}
+Registro
+{% endblock %}
+{% block content %}
+
+
+
+<h2>Registro para usuarios nuevos</h2>
+<form method="post" action="{{ url_for('signup') }}">
+	<p>Nickname<input name="username" type="text"></p>
+	<p>Contraseña<input name="password" type="text"></p>
+    <p>Nombres<input name="nombres_u" type="text"></p>
+    <p>Apellidos<input name="apellidos_u" type="text"></p>
+    <p>Rol<input name="rol" type="text" placeholder="estudiante,docente,superadmin"></p>
+    <p>Dirección<input name="direccion_u" type="text"></p>
+    <p>Email<input name="email_u" type="text"></p>
+    <p>Género<input name="genero_u" type="text"></p>
+    <p>Fecha de nacimiento<input name="fecha_u" type="text"></p>
+	<button type="submit" value="Sign Up">REGISTRAR</button>
+</form>
+{% endblock %}
