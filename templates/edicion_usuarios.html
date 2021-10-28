@@ -10,11 +10,11 @@ Edición
 
                         <div class="card-body">
                             <ul class="list-group">
-                                {% for x in task%}
+                                {% for x in show%}
                                 <li class="list-group-item">
-                                    <span class="{%if x.nickname%}nickname{%endif%}">{{x.nombres_usuario}}</span>
-                                    <a href="/nickname/{{x.id}}" class="btn btn-success btn-sm">Edit</a>
-                                    <a href="/delete/{{x.id}}">Delete</a>
+                                    {{x.nickname}}
+                                    <a href="/done/{{x.id}}" class="btn btn-success btn-sm">Editar</a>
+                                    <a href="/delete/{{x.id}}">Eliminar</a>
                                 </li>
                                 {% endfor%}
                             </ul>

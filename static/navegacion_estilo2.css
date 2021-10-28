@@ -99,6 +99,7 @@ nav li:hover ul {
 }
 
 table {
+    color: black;
     width: 50%;
     height: 300px;
 }

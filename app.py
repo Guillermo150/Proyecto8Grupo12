@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
-
+import sqlite3
 import os
 
 dbdir = "sqlite:///" + os.path.abspath(os.getcwd()) + "/data1.db"
@@ -64,7 +64,8 @@ def login():
 
 @app.route('/edicion')
 def edicion():
-    return render_template("edicion_usuarios.html")
+    mostrar=Tabla.query.all()
+    return render_template("edicion_usuarios.html", show=mostrar)
 
 
 @app.route('/delete/<id>')
