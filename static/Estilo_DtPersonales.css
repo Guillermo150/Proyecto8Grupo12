@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 0px solid black;
+}
+
+body {
+    background-image: url("https://www.elegircarrera.net/blog/wp-content/uploads/2017/10/campus-universitario-2000x1200.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div#barra{
+    display: inline;
+    float: left;
+}
+
+div#box {
+    float: right;
+    font-size: 15px;
+    width: 200px;
+}
+
+div#contenido {
+    float: right;
+    background-color: white;
+    width: 1250px;
+    height: 650px;
+    border: 5px solid black;
+    align-content: space-between;
+    padding: 10px;
+    margin-right: 15px ;
+}
+
+h1 {
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 65px;
+    display: inline-flexbox;
+}
+
+.logout {
+    list-style: none;
+    width: 90px;
+    position: fixed;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    width: 120px;
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    width: 200px;
+    height: 55px;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000
+}
+
+.submenu li a {
+    color: rgb(0, 0, 0);
+    background-color: #000(233, 118, 52, 0.877);
+}
+
+li a:hover {
+    color: rgb(255, 0, 0);
+    background-color: #fff;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+}
+
+nav li:hover ul {
+    display: block;
+    position: sticky;
+    object-position: right;
+}
+
+/*Datos personales*/
+.img_perfil{
+    width: 180px;
+    border-radius: 100%;
+    border: 4px dotted black;
+    vertical-align: text-top;
+    align-items: flex-start;
+
+    
+}
+
+.DatosPersonales{
+    background-color: white;
+    width: 1200px;
+    height: 560px;
+    overflow-y: scroll;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 15px 10px 10px 10px;
+    
+}
+
+#tbDP{
+    height: auto;
+    width: 100%;
+    text-align: left;
+}
+#tbDP tr{
+    height: 45px;
+}
+#tbDP tr td{
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/********************************************************************/
+.inf-nav{
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+.inf-nav img{
+    text-align: left;
+    vertical-align: text-top;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+/*********************************************************************/
+/***********************************************************************/
