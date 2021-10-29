@@ -75,17 +75,25 @@ def delete(id):
     db.session.commit()
     return redirect(url_for("semivuelta"))
 
-@app.route("/nickname/<id>")
-def nickname(id):
-    task=Tabla.query.filter_by(id=int(id)).first()
-    task.nickname=not(task.nickname)
+
+
+@app.route("/edit_user")
+def editar():
+    return render_template("formedit.html")
+
+@app.route("/submitform",methods=["POST"])
+def implementar():
+    lectura=Tabla.query.filter_by(nickname=request.form["username_e"]).first()
+    lectura.nickname=request.form["username_e"]
+    lectura.nombres_usuario=request.form["nombres_e"]
+    lectura.apellidos_usuario=request.form["apellidos_e"]
+    lectura.direccion_usuario=request.form["direccion_e"]
+    lectura.email_usuario=request.form["email_e"]
     db.session.commit()
-    return redirect(url_for("semivuelta"))
-
-
-
-
+    return redirect(url_for("edicion"))
 
 if __name__ == "__main__":
     db.create_all()
     app.run(debug=True)
+    
+    

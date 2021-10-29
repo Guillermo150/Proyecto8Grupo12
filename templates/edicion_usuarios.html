@@ -12,9 +12,17 @@ Edición
                             <ul class="list-group">
                                 {% for x in show%}
                                 <li class="list-group-item">
+                                    {{"User: "}}
                                     {{x.nickname}}
-                                    <a href="/done/{{x.id}}" class="btn btn-success btn-sm">Editar</a>
-                                    <a href="/delete/{{x.id}}">Eliminar</a>
+                                    {{"||"}}
+                                    {{x.nombres_usuario}}
+                                    {{x.apellidos_usuario}}
+                                    {{"||"}}
+                                    {{x.email_usuario}}
+                                    {{"||"}}
+                                    {{x.rol}}
+                                    <a href="{{ url_for('editar') }}" class="btnforright2">Editar</a>
+                                    <a href="/delete/{{x.id}}" class="btnforright">Eliminar</a>
                                 </li>
                                 {% endfor%}
                             </ul>

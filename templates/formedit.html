@@ -1,0 +1,18 @@
+{% extends "base4.html" %}
+{% block title %}
+Formulario de edicion
+{% endblock %}
+
+{% block content %}
+
+<h2>Edición para usuarios existentes</h2>
+<form method="post" action="{{ url_for('implementar') }}">
+	<p>Nickname<input name="username_e" type="text"></p>
+    <p>Nombres<input name="nombres_e" type="text"></p>
+    <p>Apellidos<input name="apellidos_e" type="text"></p>
+    <p>Dirección<input name="direccion_e" type="text"></p>
+    <p>Email<input name="email_e" type="text"></p>
+	<button type="submit" value="Sign Up">ACTUALIZAR</button>
+</form>
+
+{% endblock %}
